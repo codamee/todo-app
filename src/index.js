@@ -1,4 +1,4 @@
 import "./styles.css"
-import { Project,Manager } from "./array.js"
+import { Project, Manager } from "./components/array/array.js"
 
 

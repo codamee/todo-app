@@ -1,37 +1,31 @@
 class Todo {
-    constructor(title, discription, dueTime, priority) {
+    constructor(title, discription, duetime, priority) {
         this.title = title
         this.discription = discription
-        this.dueTime = dueTime
+        this.duetime = duetime
         this.priority = priority
     }
 }
-
-
 class Project {
-    #todos
     #name
+    #todos
     constructor(name) {
-        this.#name = name;
+        this.#name = name
         this.#todos = []
     }
-    setTodos(title, discription, dueTime, priority) {
-        let newTodo = new Todo(title, discription, dueTime, priority)
-        this.#todos.push(newTodo)
+    setArray(title, discription, duetime, priority) {
+        let obj = new Project(title, discription, duetime, priority)
+        this.#todos.push(obj)
     }
-    getTodos() {
+    getArray() {
         return this.#todos
     }
-    getName() {
-        return this.#name
-    }
 }
-
 
 class Manager {
     #mainArray
     constructor() {
-        this.#mainArray = []
+        this.mainArray = []
     }
     setMainArray(name) {
         let obj = new Project(name)
@@ -41,6 +35,4 @@ class Manager {
         return this.#mainArray
     }
 }
-
-
-export {Project , Manager}
+export { Project, Manager }
