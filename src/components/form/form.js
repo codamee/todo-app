@@ -4,7 +4,7 @@ function form() {
     let container = document.querySelector(".sidebar")
     let divElem = document.createElement("div")
     divElem.classList.add("formContainer")
-    divElem.innerHTML =/*html*/
+    divElem.innerHTML =
         `
         <div class="form">
              <form action="/">
@@ -28,7 +28,7 @@ function form() {
                             <option value="Least">Least</option>
                     </select>
                 </div>
-                <button id="submitBtn" >Add Project</button>
+                        <button id="submitBtn" type="submit">Add Todo</button>
             </form>
         </div>
     `

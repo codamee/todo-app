@@ -13,6 +13,9 @@ class Project {
         this.#name = name
         this.#todos = []
     }
+    getName() {
+        return this.#name
+    }
     setArray(title, description, duetime, priority) {
         let obj = new Todo(title, description, duetime, priority)
         this.#todos.push(obj)
@@ -25,7 +28,7 @@ class Project {
 class Manager {
     #mainArray
     constructor() {
-        this.mainArray = []
+        this.#mainArray = []
     }
     setMainArray(name) {
         let obj = new Project(name)
