@@ -13,8 +13,8 @@ function form() {
                     <input type="text" name="title" id="title" required/>
                 </div>
                 <div>
-                    <label for="discription">Discription</label>
-                    <input type="text" name="discription" id="discription" required/>
+                    <label for="description">description</label>
+                    <input type="text" name="description" id="description" required/>
                 </div>
                 <div>
                     <label for="duetime">Due-Time</label>

@@ -1,7 +1,7 @@
 class Todo {
-    constructor(title, discription, duetime, priority) {
+    constructor(title, description, duetime, priority) {
         this.title = title
-        this.discription = discription
+        this.description = description
         this.duetime = duetime
         this.priority = priority
     }
@@ -13,8 +13,8 @@ class Project {
         this.#name = name
         this.#todos = []
     }
-    setArray(title, discription, duetime, priority) {
-        let obj = new Todo(title, discription, duetime, priority)
+    setArray(title, description, duetime, priority) {
+        let obj = new Todo(title, description, duetime, priority)
         this.#todos.push(obj)
     }
     getArray() {

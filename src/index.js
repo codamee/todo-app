@@ -2,15 +2,19 @@ import "./styles.css"
 import { Project, Manager } from "./components/array/array.js"
 import { form } from "./components/form/form.js"
 
+function addTodoBtn() {
+    let formContainer = document.querySelector(".formContainer")
+    let addTodoBtn = document.querySelector(".addTodo")
+    addTodoBtn.addEventListener("click", (elem) => {
+        formContainer.style.visibility = "visible"
+    })
+}
+addTodoBtn()
 
-let addTodoBtn = document.querySelector(".addTodo")
-let formContainer = document.querySelector(".formContainer")
-addTodoBtn.addEventListener("click", (elem) => {
-    formContainer.style.visibility = "visible"
-
-})
 let project = new Project("default")
+// let manager= new Manager("Sports")
 function getFormData() {
+    let formContainer = document.querySelector(".formContainer")
     let submitBtn = document.querySelector('#submitBtn')
     let formElem = document.querySelector('form')
 
@@ -19,7 +23,8 @@ function getFormData() {
         formContainer.style.visibility = "hidden"
         let formData = new FormData(formElem)
         let data = Object.fromEntries(formData.entries());
-        project.setArray(data.title, data.discription, data.duetime, data.priority)
+        project.setArray(data.title, data.description, data.duetime, data.priority)
+        formElem.reset()
         printUi()
     })
 }
@@ -32,16 +37,26 @@ function printUi() {
         divElem.classList.add("todo")
         divElem.innerHTML =/*html*/
             `
-        <div class="title">${elem.title}</div>
-        <div class="discription">${elem.discription}</div>
-        <div class="duetime">${elem.duetime}</div>
-        <div class="priority">${elem.priority}</div>
+        <div class="title">Title : ${elem.title}</div>
+        <div class="duetime"> Time : ${elem.duetime}</div>
+        <div class="priority"> Priority : ${elem.priority}</div>
+        <div class="description"> Description : ${elem.description}</div>
         <div class="btns">
-            <div class="edit">EditBtn</div>
-            <div class="del">DelBtn</div>
+            <button class="edit">EditBtn</button>
+            <button class="del">DelBtn</button>
         </div>
         `
         container.append(divElem)
     })
 }
 getFormData()
+
+
+//Add project
+function addProject() {
+    let addProjectBtn = document.querySelector(".addProject")
+
+}
+
+
+
