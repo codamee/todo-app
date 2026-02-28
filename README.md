@@ -9,7 +9,7 @@ A  project management tool built with **Object-Oriented JavaScript**. This appli
 
 ## 🎨 Key Features
 * **Project-Based Categorization:** Create custom projects (e.g., "Work", "Personal", "Gym") to keep tasks organized and focused.
-* **Full CRUD Functionality:** Create, Read, Update, and Delete both individual tasks and entire projects.
+* **Full CRUD Functionality:** Create, Read, Update, and Delete.
 * **Priority & Due Dates:** Color-coded priority levels and date integration using the `date-fns` library for better time management.
 * **Persistent Storage:** (Optional) Integrated `localStorage` to ensure your data survives a page refresh.
 * **Dynamic Content Loading:** A "Single Page Application" feel where switching projects re-renders the task list instantly.
