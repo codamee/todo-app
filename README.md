@@ -2,7 +2,7 @@
 
 A  project management tool built with **Object-Oriented JavaScript**. This application focuses on complex data structures, separation of concerns, and dynamic UI rendering.
 
- <img src="screenshot1.png" width="400" alt="Main Dashboard">  
+ <img src="screenshot1.png" width="600" alt="Main Dashboard">  
 
 ## 🚀 Live Demo
 [Organize Your Tasks Here](https://codamee.github.io/todo-app/)
