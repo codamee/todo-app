@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   const [todo, setTodo] = useState(" ")
   const [todoArray, setTodoArray] = useState([])
-  const [finished, setFinished] = useState(false)
+  const [finished, setFinished] = useState(true)
   // const funti
 
   useEffect(() => {
@@ -73,7 +73,7 @@ function App() {
             }
             {todoArray.map((item, index) => {
 
-              return <div key={index} className="todo flex justify-between items-center bg-slate-200 px-4 py-2 rounded-sm">
+              return (finished || !item.isCompleted) && <div key={index} className="todo flex justify-between items-center bg-slate-200 px-4 py-2 rounded-sm">
                 <div className=' flex gap-3'>
                   <input onChange={handleCheckbox} name={index} checked={item.isCompleted} className='w-4 cursor-pointer' type="checkbox" id="check" />
                   <p className={`text-sm md:text-lg ${item.isCompleted ? 'line-through' : ''}`}>
