@@ -3,9 +3,7 @@
 
 A todo management application built with **React**, **Vite**, and **Tailwind CSS**.
 
-## 🚀 Live Demo
-  
-**[TodoEx - Your Daily Task Setter](https://todo-app-plum-ten-18.vercel.app/)**
+### 👉 [Live Demo](https://todo-app-plum-ten-18.vercel.app/)
 
 ---
 
